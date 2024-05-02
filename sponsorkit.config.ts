@@ -1,4 +1,4 @@
-import { BadgePreset, defineConfig, presets } from 'sponsorkit'
+import { defineConfig } from 'sponsorkit'
 
 const year = new Date().getFullYear()
 const month = new Date().getMonth() + 1
@@ -13,6 +13,7 @@ export default defineConfig({
     {
       name: `sponsors.${date}`,
       width: 1000,
+      includePastSponsors: false,
       renderer: 'circles'
     },
     {
