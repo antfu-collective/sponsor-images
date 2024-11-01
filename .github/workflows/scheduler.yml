@@ -1,5 +1,8 @@
 name: Scheduler
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   schedule:
@@ -27,7 +30,7 @@ jobs:
           SPONSORKIT_OPENCOLLECTIVE_SLUG: antfu
 
       - name: Commit
-        uses: EndBug/add-and-commit@v5
+        uses: EndBug/add-and-commit@v9
         with:
           message: "chore: update sponsors.svg"
           add: "sponsors.*"
