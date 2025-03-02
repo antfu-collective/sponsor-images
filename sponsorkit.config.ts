@@ -8,7 +8,6 @@ const date = `${year}-${month.toString().padStart(2, '0')}`
 export default defineConfig({
   outputDir: '.',
   formats: ['svg', 'png'],
-
   renders: [
     {
       name: `sponsors.${date}`,
